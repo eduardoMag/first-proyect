@@ -8,18 +8,15 @@ app.use(express.static(__dirname + '/public'));
 const handlebars = require('express3-handlebars').create({defaultLayout:'main' });
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-
-//port
 app.set('port', process.env.PORT || 3000);
+//home page
+app.get('/', function(req, res){
+  res.render('home');
+});
 
 //comming soon page
 app.get('/comming-soon', function(req, res){
   res.render('comming-soon');
-});
-
-//home page
-app.get('/', function(req, res){
-  res.render('home');
 });
 
 //404 catch-all handler (middleware)
