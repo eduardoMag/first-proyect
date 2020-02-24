@@ -1,0 +1,16 @@
+{
+  "name": "firstexpress",
+  "version": "1.0.0",
+  "description": "proyect one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eduardoMag",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.3",
+    "updates": "^9.3.3"
+  }
+}
