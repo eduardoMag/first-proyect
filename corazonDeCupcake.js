@@ -15,18 +15,21 @@ app.set('port', process.env.PORT || 3000);
 //routes
 // app.get('/', (req, res)=>{res.render('home');});
 
-app.get('/', function(req, res){
+app.get('/', (req, res) =>{
   res.render('home');
+});
+app.get('/test', (req, res) =>{
+  res.render('test');
 });
 
 // 404 catch-all handler (middleware)
-app.use(function(req, res, next){
+app.use((req, res, next) => {
   res.status(404);
   res.render('404');
 });
 
 // 500 error handler (middleware)
-app.use(function(err, req, res, next){
+app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500);
   res.render('500');
