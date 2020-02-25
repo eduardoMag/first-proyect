@@ -1,17 +1,25 @@
 {
-  "name": "firstexpress",
+  "name": "proyectone",
   "version": "1.0.0",
-  "description": "proyect one",
+  "description": "first package for testing",
   "main": "corazonDeCupcake.js",
   "scripts": {
     "test": "yes"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoMag/Express-proyect.git"
+  },
   "author": "eduardoMag",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoMag/Express-proyect/issues"
+  },
+  "homepage": "https://github.com/eduardoMag/Express-proyect#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express3-handlebars": "^0.5.2",
+    "express-handlebars": "^3.1.0",
     "handlebars": "^4.7.3",
-    "updates": "^9.3.3"
+    "hbs": "^4.1.0"
   }
 }
