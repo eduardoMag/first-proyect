@@ -1,0 +1,56 @@
+body, html{
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url("/img/soon2.jpg");
+
+  /* Control the height of the image */
+  min-height: 60em;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+p.h1,#messageTitle{
+    margin-top: 2em;
+}
+p{
+    color: ivory;
+}
+div#image{
+    margin-top: 8em;
+}
+
+p.h1{
+    font-size: 4em;
+}
+/*MESSAGE CONTAINER*/
+div#messageContainer {
+    width: auto;
+    min-height: 30em;
+    padding: 5px;
+}
+p#messageTitle{
+    font-size: 3em;
+}
+p#messageBody{
+    font-size: 1.5em;
+}
+
+/*FOOTER*/
+.footer {
+    color: whitesmoke;
+    font-size: 1.3em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4em;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}

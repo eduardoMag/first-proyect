@@ -14,7 +14,9 @@ app.set('port', process.env.PORT || 3000);
 
 //routes
 // app.get('/', (req, res)=>{res.render('home');});
-
+app.get('/comming', (req, res)=>{
+  res.render('comming-soon', /*{layout:null}*/);
+});
 app.get('/', (req, res) =>{
   res.render('home');
 });
@@ -35,6 +37,6 @@ app.use((err, req, res, next) => {
   res.render('500');
 });
 
-app.listen(app.get('port'), function(){
+app.listen(app.get('port'), () => {
   console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate' );
 });
