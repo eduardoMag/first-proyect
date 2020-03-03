@@ -1,11 +1,11 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 //middleware
 app.use(express.static(__dirname + '/public'));
 
 //set up for handlebars view engine
-var handlebars = require('express-handlebars').create({ defaultLayout:'main'});
+const handlebars = require('express-handlebars').create({ defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -15,7 +15,7 @@ app.set('port', process.env.PORT || 3000);
 //routes
 // app.get('/', (req, res)=>{res.render('home');});
 app.get('/comming', (req, res)=>{
-  res.render('comming-soon', /*{layout:null}*/);
+  res.render('comming-soon', {layout:null});
 });
 app.get('/', (req, res) =>{
   res.render('home');
